@@ -1,6 +1,7 @@
 
 import './App.css'
 import Header from './Components/Header'
+import Slider from './Components/Slider'
 
 function App() {
  
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
      <div className='bg-black'>
-      <Header></Header>
+      <Header />
+      <Slider></Slider>
      </div>
     </>
   )
