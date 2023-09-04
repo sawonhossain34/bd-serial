@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const movieBaseUrl = "http://api.themoviedb.org/3"
+const movieBaseUrl = "https://api.themoviedb.org/3"
 const api_key = "83dd270a4e1ce260adc96e334c5ddeae"
 
 const movieByGenreBaseURL='https://api.themoviedb.org/3/discover/movie?api_key=83dd270a4e1ce260adc96e334c5ddeae';
