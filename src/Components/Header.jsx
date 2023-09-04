@@ -36,8 +36,10 @@ const Header = () => {
     return (
         <div className="flex items-center justify-between text-white p-5">
             <div className="flex items-center gap-8">
-                <img className="w-[80px] md:w-[115px] object-cover" src={logo} alt="" />
-                <div className="hidden  md:flex gap-8">
+                <div className="flex items-center mr-2">
+                <img className="w-[60px] md:w-[100px] object-cover" src={logo} alt="" /><h2 className="text-[20px] md:text-[35px] font-bold ">Serial</h2>
+                </div>
+                <div className="hidden  md:flex gap-7">
                     {menu.map((item, index) => (
                         <HeaderItems name={item.name} Icon={item.icon} key={index} />
                     ))}

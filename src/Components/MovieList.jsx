@@ -16,7 +16,6 @@ const MovieList = ({ genreId, index_ }) => {
     const getMovieByGenreId = () => {
         GlobalApi.getMovieByGenreId(genreId)
             .then((res) => {
-                console.log(res.data.results);
                 setMovieList(res.data.results);
             })
             .catch((error) => {
@@ -39,7 +38,7 @@ const MovieList = ({ genreId, index_ }) => {
     return (
         <div className="relative">
             <IoChevronBackOutline onClick={() => sliderLeft(elementRef.current)}
-                className="hidden md:block text-white text-[30px] absolute bottom-0 left-0  mt-[-10px] cursor-pointer"
+                className="hidden md:block text-white text-[30px] absolute bottom-0 left-0  mt-[-10px] z-10 cursor-pointer"
             />
 
             <div
@@ -53,7 +52,7 @@ const MovieList = ({ genreId, index_ }) => {
                 ))}
             </div>
             <IoChevronForwardOutline onClick={() => sliderRight(elementRef.current)}
-                className="hidden md:block text-white text-[30px] absolute  cursor-pointer  bottom-0 right-0"
+                className="hidden md:block text-white text-[30px] z-10 absolute  cursor-pointer  bottom-0 right-0"
             />
         </div>
     );
