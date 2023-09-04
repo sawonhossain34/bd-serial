@@ -1,7 +1,6 @@
 import { useEffect, useState,useRef } from "react";
 import GlobalApi from "../Services/GlobalApi";
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
-// import { useref } from "react-router-dom";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
 const screenWidth = window.innerWidth
 
